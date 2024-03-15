@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Midterm Charity Website Prototypes</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header role="banner">
+        <a href="#main" class="skip">Skip to main content</a>
+  
+        <div class="welcomebanner">
+            <div class="profileimage">
+                <picture>
+                    <source srcset="images/men_1x.png" media="(max-width:500px)" />
+                    <!-- If the screen size is less or equal to 500px, will show 1x image -->
+                    <source srcset="images/men_2x.png" media="(min-width:750px)" />
+                    <!-- If the screen size is greater or equal to 500px, will show 2x image -->
+                    <img src="images/men_1.5x.png" alt="fallback" />
+                    <!-- any size in between will fall back to 1.5x image -->
+                </picture>
+            </div>
+
+            <div class="welcomeheading">
+                <h1 role="heading">Welcome,</h1>
+                <h2 role="heading">Matthew Anderson</h2>
+                <p>Let's get started by adding more information to your profile.</p>
+            </div>
+
+            <div class="homepagebtns">
+                <button class="button-1">GO TO PROFILE</button>
+                <button class="button-2">DISMISS</button>
+                <hr>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="maincontent" role="main">
+        <h2 role="heading">Trending Charities</h2>
+        <section class="section1">
+            <a href="listpage.html">
+                <picture>
+                    <source srcset="images/hands_1x.png" media="(max-width:500px)" />
+                    <source srcset="images/hands_2x.png" media="(min-width:750px)" />
+                    <img src="images/hands_1.5x.png" alt="fallback" />
+                </picture>
+            </a>
+            <h2 role="heading">St.Loueis Welfare Org.</h2>
+            <hr>
+            <div class="raisedmoneycontainer">
+                <h5 role="heading">TOTAL RAISED</h5>
+                <div class="totalcontainer">
+                    <div class="deletedamount"><del>$10,000</del></div>
+                    <div class="amount">$12,500</div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <picture>
+                <source srcset="images/women_1x.png" media="(max-width:500px)" />
+                <source srcset="images/women_2x.png" media="(min-width:750px)" />
+                <img src="images/women_1.5x.png" alt="fallback" />
+            </picture>
+        </section>
+    </main>
+
+    <!-- navbar with SVG icons -->
+    <nav role="navigation" aria-label="Main">
+        <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <li itemprop="maintainer">
+                <a href="#home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                        <path d="M5.769,14V9.333H9.231V14H12.75V7H15L7.5,0,0,7H2.25v7Z" fill="#27282b" />
+                    </svg><br>
+                    HOME</a>
+            </li>
+            
+            <li itemprop="maintainer">
+                <a href="#news"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <rect width="16" height="16" opacity="0" />
+                        <path
+                            d="M6.668,11.333a.667.667,0,0,1-.473-.193L1.014,5.953A3.488,3.488,0,0,1,5.948,1.02l.72.72.72-.72a3.488,3.488,0,1,1,4.933,4.933L7.141,11.14A.667.667,0,0,1,6.668,11.333Z"
+                            transform="translate(1.332 2.667)" fill="#27282b" />
+                    </svg><br>CHARITIES</a>
+            </li>
+
+            <li itemprop="contact">
+                <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="13.964" height="13.967"
+                        viewBox="0 0 13.964 13.967">
+                        <g transform="translate(0 -0.033)">
+                            <path
+                                d="M13.8,12.956,9.916,9.036a5.535,5.535,0,1,0-.84.851l3.858,3.895a.6.6,0,0,0,.844.022A.6.6,0,0,0,13.8,12.956Z"
+                                transform="translate(0 0.033)" fill="#27282b" />
+                        </g>
+                    </svg><br>EXPLORE</a>
+            </li>
+
+            <li itemprop="about">
+                <a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <rect width="16" height="16" opacity="0" />
+                        <g transform="translate(5 2)">
+                            <path d="M2.667,5.333A2.667,2.667,0,1,0,0,2.667,2.667,2.667,0,0,0,2.667,5.333Z"
+                                transform="translate(0.333 0)" fill="#27282b" />
+                        </g>
+                        <path d="M0,4.667a.667.667,0,0,0,.667.667h8a.667.667,0,0,0,.667-.667A4.667,4.667,0,0,0,0,4.667Z"
+                            transform="translate(3.333 8.667)" fill="#27282b" />
+                    </svg><br>PROFILE</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

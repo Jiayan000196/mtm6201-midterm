@@ -1,0 +1,290 @@
+/* set the whole web font to sans serif, give it a magin on the left and right. */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* this is the skipcontent btn, better accessibility */
+  .skip {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: orangered;
+    color: white;
+    padding: 15px 15px;
+  }
+  
+  .skip:focus {
+    position: static;
+    top: 0;
+    outline: 5px solid yellow;
+  }
+  
+  /* use flexbox to keep everything in row, and vertically align */
+  .splashpage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .topcontainer h1 {
+    color: #1961c0;
+    margin-bottom: 0px;
+  }
+  
+  .topcontainer h2 {
+    color: grey;
+    font-weight: lighter;
+    margin-top: 8px;
+    margin-bottom: 40px;
+  }
+  
+  /* splashpage btn with animation to make it more interesting */
+  .splashbtn button {
+    background-color: #1961c0;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .profileimage img {
+    padding-top: 30px;
+    float: right;
+  }
+  
+  .welcomeheading h1 {
+    padding-top: 80px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  .welcomeheading h2 {
+    padding-left: 10px;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .welcomeheading p {
+    font-size: 80%;
+    font-weight: lighter;
+    color: grey;
+    padding-left: 10px;
+  }
+  
+  .button-1 {
+    display: inline-block;
+    margin: auto;
+    font-size: 12px;
+    font-weight: bold;
+    border-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .button-1:hover {
+    background-color: #0361db;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* animation when the btn is active */
+  .button-1:active {
+    background-color: #0361db;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+  }
+  
+  .button-2 {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    border-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  
+  .button-2:hover {
+    background-color: #0361db;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .button-2:active {
+    background-color: #0361db;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+  }
+  
+  .totalcontainer h5 {
+    font-size: 10px;
+    color: gray;
+    font-weight: lighter;
+    margin-top: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .section1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .totalcontainer p {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  
+  .totalcontainer {
+    display: inline-block;
+  }
+  
+  .maincontent h2 {
+    padding-top: 25px;
+    font-size: 10px;
+    color: gray;
+  }
+  
+  .maincontent h5 {
+    display: inline-block;
+    font-size: 10px;
+    color: gray;
+    font-weight: lighter;
+    margin-bottom: 0;
+    margin-top: -20px;
+  }
+  
+  .maincontent h2 {
+    /* padding-left: 10px; */
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .totalcontainer {
+    float: right;
+  }
+  
+  .section2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .totalcontainer {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    padding-right: 20px;
+  }
+  
+  .deletedamount {
+    color: grey;
+    padding-right: 10px;
+    font-size: 13px;
+  }
+  
+  .amount {
+    color: #0361db;
+  }
+  
+  .select-box select {
+    border: none;
+    font-size: 15px;
+  }
+  
+  .select-box {
+    padding-top: 50px;
+  }
+  
+  .charitymainsection h4 {
+    padding-top: 25px;
+    font-size: 10px;
+    color: gray;
+  }
+  
+  nav {
+    width: 100%;
+    position: sticky;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    padding-right: 40px;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  
+  nav ul {
+    /* position: absolute; */
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  svg {
+    padding-right: 40px;
+  }
+  
+  nav li:hover {
+    animation: flip-animation 2s;
+  }
+  
+  @keyframes flip-animation {
+    from {
+      transform: rotateX(0deg);
+    }
+  
+    to {
+      transform: rotateX(360deg);
+    }
+  }

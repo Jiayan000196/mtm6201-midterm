@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Midterm Charity Website Prototype</title>
+</head>
+
+<body>
+    <!-- header with schema information -->
+    <header role="banner"><a href="#main" class="skip">Skip to main content</a></header>
+    
+    <!-- use 3 divs to seperate the 3 items on the splashpage to faster align them with the flexbox property -->
+    <div class="splashpage">
+        <div class="topcontainer">
+            <h1 role="heading">Acts.Of.Life</h1>
+            <h2 role="heading">Sharing made social.</h2>
+        </div>
+
+
+        <section class="splashpageimg">
+            <picture>
+                <source srcset="images/kidsimage-original.png" media="(max-width:500px)" />
+                <source srcset="images/kidsimage-2x.png" media="(min-width:750px)" />
+                <img src="images/kidsimage-1x.png" alt="fallback" />
+            </picture>
+        </section>
+
+        <div class="splashbtn">
+            <a href="homepage.html">
+                <button type="submit"><span>GET STARTED</span></button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
